@@ -28,3 +28,6 @@ we will see
 - tf.train.Optimizer
 - tf.train.Optimizer.minimize(loss , var_list) // optimization operation to computation graph
 
+
+
+BASIC STRUCTURE :
