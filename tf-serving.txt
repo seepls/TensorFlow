@@ -1,0 +1,17 @@
+tensor flow serving is a flexible , high performance serving system for ML models , designed for production environments .
+tensorflow serving makes it easy to deploy new algorithms and experiments. while keeping same server architecture and APIs.
+Tensorflow serving provides integration with tensorflow models .can be extended to serve other types of models and data .
+
+
+Servables 
+central abstraction in tf serving .underlying objects that clients use to perform computation .[ look up or inference ]
+Servable 
+- single shard of a look up table 
+- single model 
+- tuple of inference models
+
+typical servables include :
+tensorflow SavedModelBundle (tensorflow :: session )
+lookup table for embedding or vocabulary look ups 
+
+tf serving 
