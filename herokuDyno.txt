@@ -1,0 +1,6 @@
+lightweight container for running app.
+containerization abstracts away . containers used at heroku = dynos 
+app can scale to any specified number of dynos based on its resource demand .
+to deploy heroku needs 3 things :
+source code | list of dependencies | procfile 
+https://devcenter.heroku.com/articles/dynos
