@@ -1,0 +1,8 @@
+Basically redis forms an in-memory persistence layer for websockets. So it stores the information 
+about the clients to which websocket connection is currently 
+open and for HTTP long polling, it stores the client info until it is time to expire.
+If we are going to use a socketIO server with express, why do we going to need redis? Just to maintain the list of clients right?
+Instead of that, lets subscribe the users to a particular channel based on the view-state of the frontend.
+We are going to use sockets to deliver realtime updates of incident reports.
+So, instead of pushing the message to each client, lets create channels based on their geo-spatial location
+i.e. we are going to have separate channels for lets say kanpur & delhi.
